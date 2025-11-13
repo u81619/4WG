@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مضيف 4GAMER - اختيار الإصدار</title>
+    <title>4GAMER PSFree Host 9.xx - اختيار الإصدار</title>
     <style>
         * {
             margin: 0;
@@ -14,13 +14,11 @@
         body {
             background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 25%, #2d2d5f 50%, #1a1a3e 75%, #0f0f23 100%);
             background-attachment: fixed;
-            font-family: 'Tajawal', 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             color: #ffffff;
             min-height: 100vh;
             position: relative;
             overflow-x: hidden;
-            direction: rtl;
-            text-align: center;
         }
         
         .bg-decoration {
@@ -166,6 +164,13 @@
             outline: none;
         }
         
+        .version-card:focus {
+            border-color: rgba(213, 77, 176, 0.8);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(213, 77, 176, 0.2);
+            outline: none;
+        }
+        
         .version-badge {
             display: inline-block;
             background: linear-gradient(135deg, #925aef, #e24aa2);
@@ -203,6 +208,7 @@
             margin-bottom: 1.5rem;
         }
         
+        
         .credits {
             position: fixed;
             bottom: 0;
@@ -216,46 +222,53 @@
             font-size: 0.9rem;
             z-index: 10;
         }
-
+        
+        .credits-line {
+            margin: 0.25rem 0;
+        }
+        
         .credit-label {
             color: #ffffff;
             font-weight: 500;
         }
-
+        
         .credit-link {
             color: #ec4899;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
         }
-
+        
         .credit-link:hover {
             color: #ff8fc7;
         }
-
+        
         .telegram-link {
             color: #8b5cf6;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
         }
-
+        
         .telegram-link:hover {
             color: #b595ff;
         }
-
+        
         @media (max-width: 768px) {
             .main-title {
                 font-size: 2.2rem;
             }
+            
             .container {
                 padding: 1rem;
                 padding-bottom: 100px;
             }
+            
             .version-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
+            
             .version-card {
                 padding: 1.5rem;
             }
@@ -271,9 +284,9 @@
     
     <div class="container">
         <div class="header-section">
-            <h1 class="main-title">مضيف 4GAMER</h1>
-            <p class="subtitle">اختر إصدار GoldHEN الذي تريد استخدامه</p>
-            <p class="description">حدد إصدار GoldHEN الذي ترغب في تخزينه مؤقتًا وتشغيله. كل إصدار يحتوي على ميزات مختلفة وخيارات توافق متعددة.</p>
+            <h1 class="main-title">4GAMER PSFree Host 9.xx</h1>
+            <p class="subtitle">اختر إصدار GoldHEN الخاص بك</p>
+            <p class="description">اختر إصدار GoldHEN الذي تريد تخزينه مؤقتًا واستخدامه. كل إصدار له ميزات وخيارات توافق مختلفة.</p>
         </div>
         
         <div class="version-selection">
@@ -284,16 +297,16 @@
                     <div class="version-title">GoldHEN</div>
                     <div class="version-number">v2.4b18.6</div>
                     <div class="version-description">
-                        أحدث إصدار يحتوي على تحسينات في الاستقرار وميزات جديدة وتوافق أفضل.<br> موصى به لمعظم المستخدمين للحصول على أفضل أداء.
+                        الإصدار الأحدث مع استقرار مُحسّن وميزات جديدة وتوافق معزز. موصى به لمعظم المستخدمين الذين يبحثون عن أفضل تجربة.
                     </div>
                 </div>
                 
                 <div class="version-card" onclick="selectVersion('v2.4b18.5')" tabindex="0" data-version="stable">
-                    <div class="version-badge">مستقر</div>
+                    <div class="version-badge">المستقر</div>
                     <div class="version-title">GoldHEN</div>
                     <div class="version-number">v2.4b18.5</div>
                     <div class="version-description">
-                        الإصدار السابق المعروف بثباته العالي.<br> اختره إذا واجهت مشاكل في النسخة الأحدث أو كنت تفضل الاستقرار المجرب.
+                        الإصدار المستقر السابق بموثوقية مُثبتة. اختر هذا إذا واجهت أي مشكلات مع الإصدار الأحدث أو كنت تفضل الاستقرار المُختبر.
                     </div>
                 </div>
             </div>
@@ -301,16 +314,21 @@
     </div>
     
     <div class="credits">
-        <span class="credit-label">المطور:</span> 
-        <a href="https://t.me/sudoBlackArch" class="telegram-link">BlackArch</a>
-        <span style="margin: 0 1rem;">•</span>
-        <span class="credit-label">قناة تيليجرام:</span> 
-        <a href="https://t.me/PlayStation_Pulse" class="credit-link">PlayStation Pulse</a>
+        <div class="credits-line" style="direction: rtl;">
+            <span class="credit-label">المؤلف:</span> 
+            <a href="https://t.me/sudoBlackArch" class="telegram-link">BlackArch</a>
+            <span style="margin: 0 1rem;">•</span>
+            <span class="credit-label">تيليجرام:</span> 
+            <a href="https://t.me/C9_9M" class="credit-link" style="color: #008000; font-weight: 700;">4GAMER</a>
+        </div>
     </div>
 
     <script>
         function selectVersion(version) {
+            // Store the selected version in localStorage
             localStorage.setItem('selectedGoldHENVersion', version);
+            
+            // Redirect to appropriate cache page based on version
             if (version === 'v2.4b18.6') {
                 window.location.href = 'cache.html';
             } else if (version === 'v2.4b18.5') {
@@ -318,10 +336,11 @@
             }
         }
         
-        // تنقل عبر الأسهم في لوحة التحكم أو الكيبورد
+        // Gamepad navigation
         let currentFocus = 0;
         const cards = document.querySelectorAll('.version-card');
         
+        // Handle keyboard navigation
         document.addEventListener('keydown', function(event) {
             switch(event.key) {
                 case 'ArrowLeft':
@@ -344,13 +363,37 @@
             }
         });
         
+        // Track focus changes
         cards.forEach((card, index) => {
-            card.addEventListener('focus', () => currentFocus = index);
-            card.addEventListener('keydown', event => {
+            card.addEventListener('focus', function() {
+                currentFocus = index;
+            });
+            
+            // Handle Enter key on focused element
+            card.addEventListener('keydown', function(event) {
                 if (event.key === 'Enter' || event.key === ' ') {
                     event.preventDefault();
-                    card.click();
+                    this.click();
                 }
+            });
+        });
+        
+        // Add click animation effect
+        document.querySelectorAll('.version-card').forEach(card => {
+            card.addEventListener('mousedown', function() {
+                this.style.transform = 'translateY(-2px) scale(0.98)';
+            });
+            
+            card.addEventListener('mouseup', function() {
+                this.style.transform = 'translateY(-5px) scale(1)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0px) scale(1)';
+            });
+            
+            card.addEventListener('blur', function() {
+                this.style.transform = 'translateY(0px) scale(1)';
             });
         });
     </script>
