@@ -9,7 +9,7 @@ function hide(){
 function awaitpl(){
 	    document.getElementById('notify').style.display = ''
 	    document.getElementById('notify').className = 'notification'
-      setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>Loading Payload...</h1>'; }, 50);
+      setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>جاري تحميل الحمولة...</h1>'; }, 50);
       setTimeout(function(){document.getElementById("log").innerHTML="<h1 style=color:#c5c7ff>"+LoadedMSG+"</h1>"; }, 800);
       setTimeout(ani2, 4000);
 }
@@ -17,27 +17,27 @@ function awaitpl(){
 function load_exploit(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>Loading Jailbreak... Please Wait !!!</h1>'; }, 50); 
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>جاري كسر الحماية... الرجاء الانتظار !!!</h1>'; }, 50); 
 }
 
 function load_exploit_already(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>Jailbreak is already Loaded !!!</h1>'; }, 50); 
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>تم تفعيل Jailbreak بالفعل !!!</h1>'; }, 50); 
     setTimeout(ani2, 4000);
 }
 
 function goldhen_already(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>GoldHen Bin Loader Loaded !!!</h1>'; }, 50); 
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff> GoldHen محمل !!!</h1>'; }, 50); 
     setTimeout(ani2, 4000);
 }
 
 function load_exploit_done(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>Jailbreak Success !!! GoldHEN v2.4b18.5 Loaded !!!</h1>'; }, 50); 
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#c5c7ff>تم كسر الحماية بنجاح! تم تفعيل GoldHEN v2.4b18.5!</h1>'; }, 50); 
     setTimeout(ani2, 4000);
 }
 
