@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4GAMER PSFree Host 9.xx - اختيار الإصدار</title>
-    <style>
+  <style>
         * {
             margin: 0;
             padding: 0;
@@ -12,9 +12,9 @@
         }
         
         body {
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 25%, #2d2d5f 50%, #1a1a3e 75%, #0f0f23 100%);
+            background: linear-gradient(135deg, #061507 0%, #0b2a0d 25%, #0f3d13 50%, #0b2a0d 75%, #061507 100%);
             background-attachment: fixed;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', sans-serif;
             color: #ffffff;
             min-height: 100vh;
             position: relative;
@@ -39,7 +39,7 @@
         .shape-1 {
             width: 120px;
             height: 120px;
-            background: linear-gradient(45deg, #8b5cf6, #ec4899);
+            background: linear-gradient(45deg, #0d7a32, #17c653);
             border-radius: 50%;
             top: 15%;
             left: 8%;
@@ -49,7 +49,7 @@
         .shape-2 {
             width: 80px;
             height: 80px;
-            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            background: linear-gradient(45deg, #0b5e26, #0d7a32);
             border-radius: 30%;
             top: 70%;
             right: 12%;
@@ -59,7 +59,7 @@
         .shape-3 {
             width: 100px;
             height: 100px;
-            background: linear-gradient(45deg, #1BFACC, #56FFFF);
+            background: linear-gradient(45deg, #19ff8f, #46ffb8);
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
             top: 45%;
             left: 85%;
@@ -91,7 +91,7 @@
         .main-title {
             font-size: 3rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            background: linear-gradient(135deg, #0b8a2e 0%, #11b347 50%, #2aff88 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -101,15 +101,14 @@
         
         .subtitle {
             font-size: 1.2rem;
-            color: #b6b8ff;
+            color: #a4ffba;
             font-weight: 500;
             margin-bottom: 1rem;
         }
         
         .description {
             font-size: 1rem;
-            color: #c5c7ff;
-            font-weight: 400;
+            color: #ccffdd;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -126,7 +125,6 @@
             text-align: center;
             margin: 2rem 0 1.5rem 0;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
         
         .version-grid {
@@ -137,9 +135,9 @@
         }
         
         .version-card {
-            background: rgba(30, 41, 59, 0.4);
+            background: rgba(12, 30, 15, 0.45);
             backdrop-filter: blur(20px);
-            border: 2px solid rgba(159, 88, 227, 0.5);
+            border: 2px solid rgba(32, 173, 100, 0.5);
             border-radius: 16px;
             padding: 2rem;
             text-align: center;
@@ -148,32 +146,23 @@
         }
         
         .version-card:hover {
-            border-color: rgba(213, 77, 176, 0.8);
+            border-color: #34e67e;
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(213, 77, 176, 0.2);
+            box-shadow: 0 20px 40px rgba(34, 197, 94, 0.25);
         }
         
         .version-card.latest {
-            border-color: rgba(106, 101, 242, 0.5);
+            border-color: rgba(46, 255, 139, 0.5);
         }
         
-        .version-card.latest:hover,
-        .version-card.latest:focus {
-            border-color: rgba(133, 94, 245, 0.8);
-            box-shadow: 0 20px 40px rgba(133, 94, 245, 0.2);
-            outline: none;
-        }
-        
-        .version-card:focus {
-            border-color: rgba(213, 77, 176, 0.8);
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(213, 77, 176, 0.2);
-            outline: none;
+        .version-card.latest:hover {
+            border-color: #50ffb3;
+            box-shadow: 0 20px 40px rgba(40, 255, 150, 0.25);
         }
         
         .version-badge {
             display: inline-block;
-            background: linear-gradient(135deg, #925aef, #e24aa2);
+            background: linear-gradient(135deg, #0d8d3a, #1ee065);
             color: #ffffff;
             font-size: 0.8rem;
             font-weight: 600;
@@ -184,7 +173,7 @@
         }
         
         .version-badge.latest {
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            background: linear-gradient(135deg, #0fa349, #34e67e);
         }
         
         .version-title {
@@ -196,27 +185,26 @@
         
         .version-number {
             font-size: 1.1rem;
-            color: #10b981;
+            color: #22ff99;
             font-weight: 600;
             margin-bottom: 1rem;
         }
         
         .version-description {
             font-size: 0.95rem;
-            color: #b6b8ff;
+            color: #d3ffe6;
             line-height: 1.5;
             margin-bottom: 1.5rem;
         }
-        
-        
+
         .credits {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 25%, #2d2d5f 50%, #1a1a3e 75%, #0f0f23 100%);
+            background: linear-gradient(135deg, #061507 0%, #0b2a0d 25%, #0f3d13 50%, #0b2a0d 75%, #061507 100%);
             backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(99, 102, 241, 0.2);
+            border-top: 1px solid rgba(16, 185, 129, 0.2);
             padding: 1rem;
             text-align: center;
             font-size: 0.9rem;
@@ -233,25 +221,25 @@
         }
         
         .credit-link {
-            color: #ec4899;
+            color: #22ff88;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: 0.3s;
         }
         
         .credit-link:hover {
-            color: #ff8fc7;
+            color: #66ffc4;
         }
         
         .telegram-link {
-            color: #8b5cf6;
+            color: #17d96a;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: 0.3s;
         }
         
         .telegram-link:hover {
-            color: #b595ff;
+            color: #78ffb3;
         }
         
         @media (max-width: 768px) {
@@ -273,7 +261,7 @@
                 padding: 1.5rem;
             }
         }
-    </style>
+</style>
 </head>
 <body>
     <div class="bg-decoration">
