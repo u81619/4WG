@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayStation Pulse PSFree Host 9.xx</title>
-    <style>
-        * {
+    <title>مستضيف PSFree من 4GAMER لإصدار 9.xx</title>
+<style>
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -295,14 +295,10 @@
             }
         }
 </style>
-<script>
-        if (window.applicationCache.status=='0') {
-        window.location.replace("cache5.html");
-    }
-</script>
+
 <script defer src="payloads.js"></script>
 <script defer src="loader5.js"></script>
-    <script type="module" src="alert5.js"></script>
+<script type="module" src="alert5.js"></script>
 </head>
 <body onload="load_exploit()">
     <div class="bg-decoration">
@@ -313,144 +309,71 @@
     
     <div class="container">
         <div class="header-section">
-            <h1 class="main-title">PlayStation Pulse PSFree Host 9.xx</h1>
-            <p class="subtitle">Online and Offline Lapse Auto GoldHen by Telegram PlayStation Pulse</p>
-            <p class="version-info">PSfree1.5rc1 FW 9.xx GoldHEN v2.4b18.5</p>
-            <div class="fw-display">FW - <span id="PS4fw"></span></div>
+            <h1 class="main-title">مستضيف PSFree من 4GAMER لإصدار 9.xx</h1>
+            <p class="subtitle">إصدار متصل وغير متصل تلقائي مع GoldHen من تليجرام 4GAMER</p>
+            <p class="version-info">PSFree v1.5rc1 - FW 9.xx - GoldHEN v2.4b18.5</p>
+            <div class="fw-display">إصدار النظام: <span id="PS4fw"></span></div>
         </div>
         
         <div class="status-container">
-            <div id="notify" class="notification">
-                <div id="log"></div>
-            </div>
-            <div class="jailbreak-status" id="msgs2">Ready to Jailbreak</div>
-            <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #7172a1;">
-                <span>Successful attempts: <span id="passCounter" style="color: #10b981;">0</span></span>
-                <span style="margin-left: 1rem;">Unsuccessful attempts: <span id="failCounter" style="color: #ef4444;">0</span></span>
+            <div id="notify" class="notification"><div id="log"></div></div>
+            <div class="jailbreak-status" id="msgs2">جاهز لبدء الجيلبريك</div>
+            <div style="margin-top:0.5rem;font-size:0.9rem;color:#7172a1;">
+                <span>المحاولات الناجحة: <span id="passCounter" style="color:#10b981;">0</span></span>
+                <span style="margin-right:1rem;">المحاولات الفاشلة: <span id="failCounter" style="color:#ef4444;">0</span></span>
             </div>
         </div>
         
         <div class="controls-section">
-
-
-            <div class="section-title">Payloads</div>
+            <div class="section-title">الحزم (Payloads)</div>
             <div class="buttons-grid">
-                <button onclick="load_PSFreeFix()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='PSFree Fix - Fixes PS4 PSFree exploit issues'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    PSFree Fix
-                </button>
-                
-                <button onclick="load_ftp()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='FTP Server - Start FTP server for file access'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    FTP Server
-                </button>
-                
-                <button onclick="load_ps4debug()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='PS4Debug - Enable debugging features'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    PS4Debug
-                </button>
-                
-                <button onclick="load_app2usb()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='App2USB - Transfer applications to USB storage'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    App2USB
-                </button>
-                
-                <button onclick="load_backup()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Backup - Backup system data to USB'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Backup
-                </button>
-                
-                <button onclick="load_restore()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Restore - Restore system data from USB'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Restore
-                </button>
-                
-                <button onclick="load_disable_updates()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Disable Updates - Block system updates'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Disable Updates
-                </button>
-                
-                <button onclick="load_enable_updates()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='Enable Updates - Allow system updates'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    Enable Updates
-                </button>
-                
-                <button onclick="load_appcache_install()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='AppCache Install - Install application cache'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    AppCache Install
-                </button>
-                
-                <button onclick="load_history_blocker()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='History Blocker - Block browser history tracking'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    History Blocker
-                </button>
-                
-                <button onclick="load_pup_decrypt()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='PUP Decrypt - Decrypt PS4 update files'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    PUP Decrypt
-                </button>
-                
-                <button onclick="load_rif_renamer()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='RIF Renamer - Manage license files'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    RIF Renamer
-                </button>
-                
-                <button onclick="load_webrte()"
-                        onMouseOver="document.getElementById('msgs2').innerHTML='WebRTE - Real-time editing features'"
-                        onmouseout="document.getElementById('msgs2').innerHTML='Ready to Jailbreak'">
-                    WebRTE
-                </button>
+                <button onclick="load_PSFreeFix()" onmouseover="document.getElementById('msgs2').innerHTML='إصلاح PSFree - تصحيح مشاكل الجيلبريك'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">إصلاح PSFree</button>
+                <button onclick="load_ftp()" onmouseover="document.getElementById('msgs2').innerHTML='خادم FTP - للوصول إلى ملفات النظام'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">خادم FTP</button>
+                <button onclick="load_ps4debug()" onmouseover="document.getElementById('msgs2').innerHTML='تصحيح النظام - تفعيل وضع Debug'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">PS4 Debug</button>
+                <button onclick="load_app2usb()" onmouseover="document.getElementById('msgs2').innerHTML='App2USB - نقل التطبيقات إلى USB'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">App2USB</button>
+                <button onclick="load_backup()" onmouseover="document.getElementById('msgs2').innerHTML='Backup - نسخ احتياطي للبيانات'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">نسخ احتياطي</button>
+                <button onclick="load_restore()" onmouseover="document.getElementById('msgs2').innerHTML='Restore - استعادة البيانات من USB'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">استعادة</button>
+                <button onclick="load_disable_updates()" onmouseover="document.getElementById('msgs2').innerHTML='تعطيل التحديثات - لمنع تحديث النظام'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">تعطيل التحديثات</button>
+                <button onclick="load_enable_updates()" onmouseover="document.getElementById('msgs2').innerHTML='تفعيل التحديثات - للسماح بتحديث النظام'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">تفعيل التحديثات</button>
+                <button onclick="load_appcache_install()" onmouseover="document.getElementById('msgs2').innerHTML='AppCache Install - تثبيت ذاكرة التطبيق'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">تثبيت AppCache</button>
+                <button onclick="load_history_blocker()" onmouseover="document.getElementById('msgs2').innerHTML='History Blocker - منع سجل التصفح'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">مانع السجل</button>
+                <button onclick="load_pup_decrypt()" onmouseover="document.getElementById('msgs2').innerHTML='PUP Decrypt - فك تشفير تحديثات النظام'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">فك تشفير PUP</button>
+                <button onclick="load_rif_renamer()" onmouseover="document.getElementById('msgs2').innerHTML='RIF Renamer - إدارة تراخيص الألعاب'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">RIF Renamer</button>
+                <button onclick="load_webrte()" onmouseover="document.getElementById('msgs2').innerHTML='WebRTE - تعديل مباشر في الألعاب'" onmouseout="document.getElementById('msgs2').innerHTML='جاهز لبدء الجيلبريك'">WebRTE</button>
             </div>
         </div>
-</div>
+    </div>
     
     <div class="credits">
-        <div class="credits-line">
-            <span class="credit-label">Author:</span> 
+      
+    <div class="credits">
+        <div class="credits-line" style="direction: rtl;">
+            <span class="credit-label">المؤلف:</span> 
             <a href="https://t.me/sudoBlackArch" class="telegram-link">BlackArch</a>
             <span style="margin: 0 1rem;">•</span>
-            <span class="credit-label">Telegram:</span> 
-            <a href="https://t.me/PlayStation_Pulse" class="credit-link">PlayStation Pulse</a>
+            <span class="credit-label">تيليجرام:</span> 
+            <a href="https://t.me/C9_9M" class="credit-link" style="color: #008000; font-weight: 700;">4GAMER</a>
         </div>
     </div>
 
-    <script>
-        // Firmware detection
-        UA = navigator.userAgent.substring(navigator.userAgent.indexOf("6.72 (") + 28, navigator.userAgent.indexOf(") Apple"));
-        if (UA == "layStation 4/9.00") UA = "9.00";
-        if (UA == "layStation 4/9.03") UA = "9.03";
-        if (UA == "layStation 4/9.04") UA = "9.04";
-        if (UA == "layStation 4/9.50") UA = "9.50";
-        if (UA == "layStation 4/9.51") UA = "9.51";
-        if (UA == "layStation 4/9.60") UA = "9.60";
-        if (UA == "layStation 4/99.99") UA = "99.99";
-        if (UA != "9.00" && UA != "9.03" && UA != "9.04" && UA != "9.50" && UA != "9.51" && UA != "9.60" && UA != "99.99") 
-            alert("This Is For PS4 FW9.xx Only!");
-        document.getElementById("PS4fw").innerHTML = "" + UA + "";
+<script>
+    UA = navigator.userAgent.substring(navigator.userAgent.indexOf("6.72 (") + 28, navigator.userAgent.indexOf(") Apple"));
+    if (UA == "layStation 4/9.00") UA = "9.00";
+    if (UA == "layStation 4/9.03") UA = "9.03";
+    if (UA == "layStation 4/9.04") UA = "9.04";
+    if (UA == "layStation 4/9.50") UA = "9.50";
+    if (UA == "layStation 4/9.51") UA = "9.51";
+    if (UA == "layStation 4/9.60") UA = "9.60";
+    if (UA == "layStation 4/99.99") UA = "99.99";
+    if (UA != "9.00" && UA != "9.03" && UA != "9.04" && UA != "9.50" && UA != "9.51" && UA != "9.60" && UA != "99.99") 
+        alert("هذا المستضيف مخصص فقط لأنظمة PS4 بإصدار 9.xx!");
+    document.getElementById("PS4fw").innerHTML = UA;
 
-        // Statistics initialization
-        if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount = 0;
-        if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount = 0;
-        
-        // Update counters on page load
-        if (document.getElementById("passCounter")) {
-            document.getElementById("passCounter").innerHTML = localStorage.passcount;
-        }
-        if (document.getElementById("failCounter")) {
-            document.getElementById("failCounter").innerHTML = localStorage.failcount;
-        }
-    </script>
+    if (localStorage.passcount == null) localStorage.passcount = 0;
+    if (localStorage.failcount == null) localStorage.failcount = 0;
+
+    document.getElementById("passCounter").innerHTML = localStorage.passcount;
+    document.getElementById("failCounter").innerHTML = localStorage.failcount;
+</script>
 </body>
 </html>
